@@ -19,10 +19,13 @@
                                     <li><a href="#" class="icon fa-heart">{{ article.num_heart }}</a></li>
                                    --> 
                                     <li><a href="#" class="icon fa-twitter">{{ article.num_twitter }}</a></li>
-                                    <li><a href="#" class="icon fa-facebook">{{ article.num_facebook }}</a></li>
+                                    <!--li><a href="#" class="icon fa-facebook">{{ article.num_facebook }}</a></li-->
                                 </ul> 
                 </div><!-- /.post-info -->
-                <div class="entry-content"> <h3>{{ article.summary }}</h3> </div><!-- /.entry-content -->
+                <div class="entry-content"> <p> 
+                  {% for tag in article.tags %}
+                    {{tag}} | 
+                  {% endfor %}</p> </div><!-- /.entry-content -->
         </article>
 {% endfor %}
 <!-- /#posts-list -->
