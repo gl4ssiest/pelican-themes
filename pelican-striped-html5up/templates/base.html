@@ -37,18 +37,19 @@
 
 <body>
         <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+                <h1><a href="{{ SITEURL }}/">{{ SITENAME }} </a></h1>
         </header><!-- /#banner -->
 <!-- Sidebar -->
             <div id="sidebar">
 
                 <!-- Logo -->
+                    <img src="https://i.pinimg.com/originals/53/1f/96/531f96c9581c47c8fa5905220796872b.gif" style="width: 100%;">
                     <h1 id="logo"><a href="/">{{ SITENAME }}</a></h1>
                     <!-- Text -->
                     <section class="box text-style1">
                         <div class="inner">
                             <p>
-                                <strong>Ut scelerisque nec sapien ut sollicitudin:</strong><br />{{SITESUBTITLE}}
+                                <strong>{{SITESUBTITLE}}</strong><br />
                             </p>
                         </div>
                     </section>
@@ -56,10 +57,11 @@
                     <nav id="nav">
                         <ul>
                             
-                            <li><a href="#">Nam euismod dui</a></li>
-                            <li><a href="#">Integer eget eros</a></li>
+                            <li><a target="_blank" href="{{ SOCIAL_LINKEDIN }}">About me</a></li>
+                         <!--   <li><a href="#">Integer eget eros</a></li>
                             <li><a href="#">Proin vehicula tortor</a></li>
                             <li><a href="#">Vestibulum consectetur tellus</a></li>
+                         -->
                         </ul>
                     </nav>
 
@@ -76,12 +78,12 @@
                     <section class="box recent-posts">
                         <header>
                             <h2>Contact Me</h2>
+                           
                         </header>
                         <ul>
-                            <li><a class="icon fa-envelope" href="#"> eMail</a></li>
-                            <li><a class="icon fa-twitter" href="#"> Twitter</a></li>
-                            <li><a class="icon fa-facebook" href="#"> Facebook</a></li>
-                            <li><a class="icon fa-github" href="#"> Github</a></li>
+                            <li><a class="icon fa-envelope" href="{{ SOCIAL_EMAIL }}"> eMail</a></li>
+                            <li><a class="icon fa-twitter" href="{{ SOCIAL_TWITTER }}"> Twitter</a></li>
+                            <li><a class="icon fa-github" href="{{ SOCIAL_GITHUB }}"> Github</a></li>
                             
                         </ul>
                     </section>
@@ -92,7 +94,6 @@
                     <ul id="copyright">
                         <li>Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
                 which takes great advantage of <a href="http://python.org">Python</a>.</li>
-                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                         <li>Modified under a <a href="https://creativecommons.org/licenses/by/3.0/">CC:BY</a> license.</li>
                     </ul>
 
